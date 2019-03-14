@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Project</title>
+    </head>
+
+    <body>
+	
+    
+	
+	
+	{% if messages %}
+	hiiiiiiiiiiii
+	<div class = 'alert alert-warning'>
+    {% for message in messages %}
+      {{ message }}</br>
+	{% endfor %}
+	</div>
+    
+  
+	{% endif %}
+	
+	{% block content %}
+
+	{% endblock %}
+	
+    </body>
+</html>

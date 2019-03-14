@@ -1,0 +1,25 @@
+<h1>Books</h1>
+	<ul>
+{% for book in object_list %}
+    <li>{{ book.name }} - {{ book.isbn }} 
+	<a class="btn btn-primary" href="{% url 'book_create' %}">New</a>
+	<a class="btn btn-primary" href="{% url 'book_update' book.isbn %}">edit</a>
+	<a class="btn btn-primary" href="{% url 'book_detail' book.isbn %}">view</a>
+	<a class="btn btn-primary" href="{% url 'book_delete' book.isbn %}">remove</a>
+	</li> 
+	
+{% empty %}
+
+    <li>No articles yet.</li>
+	
+{% endfor %}
+</ul>
+
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
