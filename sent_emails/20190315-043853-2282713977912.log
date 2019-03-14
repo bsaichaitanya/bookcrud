@@ -1,0 +1,12 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: chaitanya.creator@gmail.com
+Date: Thu, 14 Mar 2019 23:08:53 -0000
+Message-ID: <155260493353.12804.9515214939567554801@LAPTOP-O1M1PIGS>
+
+Someone asked for password reset for email chaitanya.creator@gmail.com. Follow the link below:
+http://127.0.0.1:8000/accounts/reset/Mg/54n-d24c40dd116bf8077dd7/
+-------------------------------------------------------------------------------

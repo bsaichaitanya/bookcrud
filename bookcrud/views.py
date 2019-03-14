@@ -6,12 +6,15 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from .models import Book
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 
+	
 
-class BookDetail(DetailView):
+class BookDetail(LoginRequiredMixin,DetailView):
 	model = Book
 	template_name = "book_detail.html"
 	slug_field = 'isbn'
+	login_url = '/accounts/login/'
 	#success_url = '/success/'
 	#success_message = "%(name)s was created successfully"
 

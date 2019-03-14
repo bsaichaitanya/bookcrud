@@ -11,6 +11,7 @@
 {% empty %}
 
     <li>No articles yet.</li>
+	<a class="btn btn-primary" href="{% url 'book_create' %}">New</a>
 	
 {% endfor %}
 </ul>
