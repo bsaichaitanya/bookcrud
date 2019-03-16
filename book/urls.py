@@ -19,6 +19,7 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
 	path('book/',include('bookcrud.urls')),
+	path('accounts/', include('accounts.urls')),
 ]
 
 #Add Django site authentication urls (for login, logout, password management)

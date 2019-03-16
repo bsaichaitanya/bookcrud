@@ -1,3 +1,7 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
 <h1>Books</h1>
 	<ul>
 {% for book in object_list %}
@@ -24,3 +28,5 @@
     {% endfor %}
 </ul>
 {% endif %}
+
+{% endblock %}
